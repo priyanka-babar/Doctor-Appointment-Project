@@ -9,7 +9,7 @@ function App() {
     <>
 
       <div className="text-green-600 text-3xl font-bold text-center mt-10">
-        Tailwind is Working ✅
+        Tailwind is Working1 ✅
       </div>    </>
 
   );
