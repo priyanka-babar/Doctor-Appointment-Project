@@ -1,17 +1,34 @@
-// import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
-import "./index.css"; // ✅ Make sure Tailwind is imported here instead of App.css
+// import "./index.css";
+
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Doctor from "./pages/Doctor";
+import Login from "./pages/Login";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import MyProfile from "./pages/MyProfile";
+import MyAppointments from "./pages/MyAppointments";
+import Appointment from "./pages/Appointment";
 
 function App() {
-
   return (
     <>
-
-      <div className="text-green-600 text-3xl font-bold text-center mt-10">
-        Tailwind is Working1 ✅
-      </div>    </>
-
+      <Navbar />
+    
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/doctor" element={<Doctor />} />
+        <Route path="/doctor/:speciality" element={<Doctor />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/my-profile" element={<MyProfile />} />
+        <Route path="/my-appointments" element={<MyAppointments />} />
+        <Route path="/appointment/:docId" element={<Appointment />} />
+      </Routes> 
+     
+    </>
   );
 }
 
