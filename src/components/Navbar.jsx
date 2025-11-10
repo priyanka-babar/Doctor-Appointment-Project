@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-gray-300 px-8 shadow-sm bg-white">
       {/* Logo */}
-      <img src={assets.logo} alt="logo" className="w-50 h-auto" />
+      <img onClick={()=>navigate("/")} src={assets.logo} alt="logo" className="w-50 h-auto" />
 
       {/* Navigation Menu */}
       <ul className="flex gap-8 text-gray-700 font-medium">
