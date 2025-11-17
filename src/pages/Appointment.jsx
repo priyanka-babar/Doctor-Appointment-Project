@@ -112,11 +112,11 @@ const Appointment = () => {
       </div>
 
       {/* Slot Section */}
-      <div className="mt-10">
+      <div className="mt-10  ml-1 ">
         <p className="text-lg font-semibold">Booking Slot</p>
 
         {/* Date Slots */}
-        <div className="flex gap-4 overflow-x-auto mt-4 pb-2">
+        <div className="flex gap-4 overflow-x-automt-4 pb-2">
           {
             docSlots.map((daySlots, index) => (
               <div
