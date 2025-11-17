@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { assets, specialityData } from '../assets/assets';
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../context/Appcontext';
 
 const Doctors = () => {
   const { speciality } = useParams();
@@ -79,7 +79,7 @@ const Doctors = () => {
                 <img
                   src={item.image || assets.defaultDoctor}
                   alt={item.name}
-                  className="w-full h-40 object-cover rounded-xl mb-3"
+                  className="w-full h-45 object-contain rounded-xl mb-3"
                 />
                 <div className="text-left">
                   <div className="flex justify-between items-center mb-1">
